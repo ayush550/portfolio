@@ -1,3 +1,4 @@
+/* setting body margin to 0 px */
 body {
 	margin: 0px;
 }
@@ -24,7 +25,7 @@ body {
 
 .horizontal-list li{
 	display: inline-block;
-	margin: 0px 15px 15px 0px;
+	margin: 10px 15px 15px 0px;
 }
 
 .horizontal-list li a{
@@ -61,6 +62,7 @@ body {
 
 .social-icons li a i{
 	padding: 18px;
+	color: black;
 	font-size: 2rem;
 	border-radius: 50%;
 	text-decoration: none;
