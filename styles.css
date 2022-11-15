@@ -182,7 +182,7 @@ section:nth-child(2n+1) {
     height: 2rem;
     background-color: lightgrey;
     border-radius: 0.8rem;
-    box-shadow: 1px 1px 2px 1px #b9b9b9 inset;
+    box-shadow: 1px 2px 2px 1px #b9b9b9 inset;
     margin: 25px;
     overflow: hidden;
     /* border: 2px solid black; */
@@ -190,7 +190,7 @@ section:nth-child(2n+1) {
 
 .skill-progress>div {
     border-radius: 20px 0px 0px 20px;
-    box-shadow: 1px 1px 5px 2px #989882;
+    /* box-shadow: 1px 1px 5px 2px #989882; */
 }
 
 .skill-name span {
@@ -247,11 +247,90 @@ section:nth-child(2n+1) {
     color: white;
 }
 
+/* Work Experience */
+
+.timeline {
+    position: relative;
+    width: 75%;
+    font-size: large;
+}
+
+.timeline-heading {
+    font-weight: 800;
+    color: darkblue;
+}
+
+.timeline-heading-worklocation {
+    font-weight: 600;
+    color: darkred;
+}
+
+.timeline-box {
+    position: relative;
+    margin: 5px;
+    width: 40%;
+    left: 5%;
+    text-align: right;
+    min-height: 150px;
+    /* border: 2px solid black; */
+}
+
+.timeline-box::after {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background-color: lightgrey;
+    top: 22%;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.timeline-box:nth-child(2n) {
+    left: 53%;
+}
+
+.timeline-box:nth-child(2n+1)::after {
+    right: -13.8%;
+}
+
+.timeline-box:nth-child(2n):after {
+    left: -10.6%;
+}
+
+.timeline-container {
+    padding: 8px;
+}
+
+#timeline-divider {
+    position: absolute;
+    width: 0;
+    top: 8%;
+    left: 50%;
+    border: 2px dashed #0096fa6b;
+    height: 75%;
+    color: #433E3f;
+}
+
+#timeline-divider .timeline-traveller {
+    position: sticky;
+    top: 135px;
+    z-index: 2;
+}
+
+#timeline-divider i {
+    transform: rotate(90deg);
+    margin-top: -35px;
+    display: block;
+    color: #2857a4;
+}
+
 /* Contact Form */
 
 #contact {
     background-color: #0abcf9;
-    background-image: linear-gradient(50deg, #0c429a 0%, #1b132d 74%);
+    /* background-image: linear-gradient(50deg, #0c429a 0%, #1b132d 74%); */
+    background-image: linear-gradient(50deg, black, darkblue);
     color: white;
     padding-bottom: 40px;
 }
@@ -381,12 +460,19 @@ button:focus {
     margin-bottom: 50px;
 }
 
+.m0 {
+    margin: 0;
+}
+
 .text-highlight {
     color: #2857a4;
     font-weight: 500;
 }
 
 /* Setting background color */
+.m-blue {
+    color: #2857a4;
+}
 
 .mb-blue {
     background-color: #2857a4;
